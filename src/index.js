@@ -45,7 +45,7 @@ const parseData = async (data) => {
 };
 
 // csv - parser;
-fs.createReadStream(__dirname + "/src/sample.csv")
+fs.createReadStream(__dirname + "/sample.csv")
   .pipe(csv())
   .on("data", (data) => {
     parseData(data);
