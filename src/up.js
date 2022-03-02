@@ -6,6 +6,7 @@ import path from "path";
 import Product from "./models/ProductTemp.js";
 const __dirname = path.resolve();
 const dataDirectory = `${__dirname}\\data`
+import utf8 from "utf8"
 
 const { ObjectId } = mongoose.Types;
 
@@ -96,7 +97,7 @@ const parseData = async (data) => {
 };
 
 // csv - parser;
-fs.createReadStream(dataDirectory + "/basin.csv")
+fs.createReadStream(dataDirectory + "/faucet.csv")
   .pipe(csv())
   .on("data", (data) => {
     parseData(data);
