@@ -3,7 +3,8 @@ export const catMap = {
 };
 
 export const subCatMap = {
-    "sanitary": "621fd68be4142b86ed0c7be5",
+    "sanitary": "62205275b4b5cbd9e67f1f6a",
+    "sanitary ware": "62205284b4b5cbd9e67f1f6e",
 };
 
 export const grpMap = {
@@ -12,6 +13,7 @@ export const grpMap = {
     "Basin": "621fd7c9e4142b86ed0c7c14",
     "accessories": "621fd8b6e4142b86ed0c7c37",
     "fittings": "621fd90de4142b86ed0c7c46",
+    "sanitary": "62205299b4b5cbd9e67f1f72",
 };
 
 export const subGrpMap = {
@@ -37,4 +39,7 @@ export const subGrpMap = {
     "bottle traps": "621fd929e4142b86ed0c7c4f",
     "waste coupling": "621fd92fe4142b86ed0c7c51",
     "other auxillaries": "621fd933e4142b86ed0c7c53",
+    "comboard": "622052b6b4b5cbd9e67f1f77",
+    "urinal": "622052bcb4b5cbd9e67f1f79",
+    "hand jet spray": "622052c2b4b5cbd9e67f1f7b",
 }
