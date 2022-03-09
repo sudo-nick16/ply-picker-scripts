@@ -1,6 +1,5 @@
 export const getAttributes = (data) => {
   //   console.log(data);
-  const total = data.total_attributes;
   const attr = {};
   const attr_names = [];
   // set doesn't work for my case
@@ -21,6 +20,7 @@ export const getAttributes = (data) => {
     }
   }
 //   console.log(attr_names, "attrnames", attributes);
+  const total = attr_names.length;
 
   for (let i = 0; i < total; i++) {
     const key = `attr${i + 1}:${attr_names[i]}`;
