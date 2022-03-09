@@ -43,11 +43,11 @@ const parseData = async (data) => {
     tags: getTags(data) || [],
     variants: getVariants(data),
   };
-  console.log(JSON.stringify(productData, null, 2));
   const product = new Product(productData);
   // await product.save()
   try {
     await product.save();
+    console.log(product)
   } catch (err) {
     console.log(JSON.stringify(productData, null, 2));
     console.log(err);

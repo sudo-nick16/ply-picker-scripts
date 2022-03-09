@@ -22,3 +22,4 @@ function removeRs(price){
 }
 
 console.log(removeRs("Rs.Â 3,665"))
+console.log(removeRs("Â 3,665"))
