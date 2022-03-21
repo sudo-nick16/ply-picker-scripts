@@ -27,6 +27,6 @@ export const getVariants = (data) => {
     variants.push(variant);
     c++;
   }
-  console.log(variants, "variants");
+  // console.log(variants, "variants");
   return variants;
 };

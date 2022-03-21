@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 
 const { Schema } = mongoose;
+const { ObjectId } = Schema.Types;
 
 const ProductSchema = new Schema({
   model_no: {
@@ -8,19 +9,19 @@ const ProductSchema = new Schema({
     required: true,
   },
   category: {
-    type: String,
+    type: ObjectId,
     required: true,
   },
   sub_category: {
-    type: String,
+    type: ObjectId,
     required: true,
   },
   group:{
-    type: String,
+    type: ObjectId,
     required: true,
   },
   sub_group: {
-    type: String,
+    type: ObjectId,
     required: true,
   },
   brand: {
@@ -33,7 +34,6 @@ const ProductSchema = new Schema({
   },
   description: {
     type: String,
-    required: true,
   },
   actual_price: {
     type: Number,
@@ -43,10 +43,14 @@ const ProductSchema = new Schema({
     type: Number,
     required: true,
   },
-  //   ratings_and_reviews: {
-  //     type: Array,
-  //     required: true,
+  // ratings_and_reviews: {
+  //   ratings: {
+  //     type: Number,
   //   },
+  //   reviews: {
+  //     type: Array
+  //   }
+  // },
   attributes: {
     type: Object,
   },
@@ -60,7 +64,7 @@ const ProductSchema = new Schema({
     default: [],
     required: true,
   },
-});
+}, { timestamps: true });
 
 const Product = mongoose.model("Product", ProductSchema);
 
